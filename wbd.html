@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Tugas WBD 1</title>
+  </head>
+  <body>
+        <header>
+          <div >
+              <h1>Simple Counter</h1>
+
+          </div>
+          <div>
+            <p>
+              <button onclick="Increase()" style="margin-left:600px"> Increase</button>
+              <button onclick="Decrease()" style="margin-left:700px margin-top:-10px" > Decrease</button>
+            </p>
+            <h2 id = "text" style="text-align:center">0</h2>
+          </div>
+
+        </header>
+        <script>
+            var a=0;
+            function Increase(){
+              a = a+1;
+              document.getElementById("text").innerHTML = a;
+            }
+            function Decrease(){
+              if(a>0){
+                a = a-1;
+                document.getElementById("text").innerHTML = a;
+              }
+            }
+
+
+        </script>
+  </body>
+</html>
